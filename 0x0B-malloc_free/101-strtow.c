@@ -43,7 +43,7 @@ char **strtow(char *str)
 			}
 			for (d = 0; d < len; d++, a++)
 				arr[o][d] = str[a];
-			arr[o++][d] = str[a];
+			arr[o++][d] = '\0';
 		}
 	}
 	arr[o] = NULL;
